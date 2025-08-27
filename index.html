@@ -12,8 +12,8 @@
     <link rel="shortcut icon" href="images/icons8_panda.ico" type="image/x-icon">
     <title>Tsitohaina Portfolio</title>
 </head>
-<body class="light-mode">
-  <div class="nav-container bg-light">
+<body class="dark-mode">
+  <div class="nav-container">
     <div class="nav-logo">
       <img src="images/icons8_atom_editor_50px_1.png" alt="" class="logo">
     </div>
@@ -30,8 +30,8 @@
           <li class="nav-link-item"><a href="#project">Mes Projet</a></li>
           <li class="nav-link-item dropdown-menu-branch"><span data-toggle="dropdown-menu">Thèmes <i class="bi bi-chevron-right"></i></span>
             <ul class="text-info dropdown-menus">
-              <li class="dropdown-menu-item" id="dark-btn"><i class="bi bi-moon-fill"> Mode sombre</i></li>
-              <li class="dropdown-menu-item" id="light-btn"><i class="bi bi-sun-fill"> Mode claire</i></li>
+              <li class="dropdown-menu-item" id="dark-btn" onclick="toogleToDark()"><i class="bi bi-moon-fill"> Mode sombre</i></li>
+              <li class="dropdown-menu-item" id="light-btn" onclick="toogleToLight()"><i class="bi bi-sun-fill"> Mode claire</i></li>
               <li class="dropdown-menu-item"><i class="bi bi-laptop"> Système</i></li>
             </ul>
           </li>
@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <section id="accueil" class="d-block text-center pt-5 mt-5 pb-5 hero">
+  <section id="accueil" class="d-block text-center pt-5 pb-5 hero">
     <div class="d-flex justify-content-between align-items-center">
       <div class="container">
         <div class="row">
@@ -66,7 +66,9 @@
         </div>
       </div>
     </div>
-  </section><br>
+  </section>
+
+
   <section id="about" class="d-block text-center pt-5 mt-5 pb-5 scroll-anim">
       <div class="d-flex justify-content-between align-items-center">
         <div class="container">
@@ -75,7 +77,7 @@
               <h2>A propos de moi</h2>
             </div>
             <div class="about-content">
-              <p class="text-md-start text-sm-start" style="text-align: left;">
+              <p class="text-md-start text-sm-start" style="text-align: left; margin-left: 1rem;">
                 Jeune passionné par l’informatique, je transforme mes idées en projets
 concrets avec du code. Autodidacte et Curieux. Déterminé, sérieux,
 autonome et conscient du travail qui m'attend, je suis persuadé que je
@@ -86,7 +88,7 @@ serais un élément moteur au sein de votre structure !
       </div>
   </section><br>
 
-  <section id="skills" class="scroll-anim">
+  <section id="skills" class="mt-5 pb-5 scroll-anim">
       <div class="divider"></div>
       <div class="heading"> 
         <h2>Mes Compétences</h2>
@@ -130,7 +132,7 @@ serais un élément moteur au sein de votre structure !
           </div>
         </div>
       </div>
-  </section><br><br><br>
+  </section>
 
   <section id="etude" class="pt-5 mt-5 scroll-anim">
       <div class="divider"></div>
@@ -146,7 +148,7 @@ serais un élément moteur au sein de votre structure !
                 <div class="timeline-heading">
                   <h4>Deuxième année</h4>
                   <h5>Licence à l' ENI</h5>
-                  <p class="text-muted"><small class="bi bi-hourglass"></small>2024-2025</p>
+                  <p ><small class="bi bi-hourglass"></small>2024-2025</p>
                 </div>
                 <div class="timelinebody">
                   <p>Je suis actuellement deuxième année en formation license.</p>
@@ -161,10 +163,10 @@ serais un élément moteur au sein de votre structure !
                 <div class="timeline-heading">
                   <h4>Première année</h4>
                   <h5>Licence à l' ENI</h5>
-                  <p class="text-muted"><small class="bi bi-hourglass"></small>2023-2024</p>
+                  <p><small class="bi bi-hourglass"></small>2023-2024</p>
                 </div>
                 <div class="timelinebody">
-                  <p>Je suis actuellement deuxième année en formation license.</p>
+                  <p>J' ai fini la formation en première année license en 2024.</p>
                 </div>
               </div>
             </div>
@@ -176,10 +178,10 @@ serais un élément moteur au sein de votre structure !
                 <div class="timeline-heading">
                   <h4>Obtention Bac</h4>
                   <h5>Série C à Ambalavao</h5>
-                  <p class="text-muted"><small class="bi bi-hourglass"></small>2022-2023</p>
+                  <p><small class="bi bi-hourglass"></small>2022-2023</p>
                 </div>
                 <div class="timelinebody">
-                  <p>Je suis actuellement deuxième année en formation license.</p>
+                  <p>Je suis titulaire du bac série C en 2023.</p>
                 </div>
               </div>
             </div>
@@ -199,12 +201,11 @@ serais un élément moteur au sein de votre structure !
           <div class="projet-block">
             <div class="column">
               <div class="card">
-                <img src="images/images_projet/blog-372771_1920.jpg" alt="Jane" style="width:100%">
-                <div class="container text-projet">
-                  <h2>E-Voiture</h2>
+                <img src="images/images_projet/projetVueJs.png" alt="Jane" style="width:100%">
+                <div class="container text-projet mt-3">
+                  <h2>E-Tomobile</h2>
                   <p class="title">Gestion de reservation</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>example@example.com</p>
+                  <p>Application web developper avec html, css, bootstrap, VueJs, PHP en backend et MySQL.</p>
                   <p class="code-source">
                     <div class="code-content">
                       <i class="bi bi-code-slash"><span class="text-sm-center">Code Source</span></i>
@@ -219,12 +220,11 @@ serais un élément moteur au sein de votre structure !
           <div class="projet-block">
             <div class="column">
               <div class="card">
-                <img src="images/images_projet/computer.jpg" alt="Mike" style="width:100%">
-                <div class="container text-projet">
+                <img src="images/images_projet/projetPhpJirama.png" alt="Mike" style="width:100%">
+                <div class="container text-projet mt-3">
                   <h2>Eau et Courant</h2>
                   <p class="title">Gestion de paiement</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>example@example.com</p>
+                  <p>J' ai realisé ce projet avec html, css, bootstrap, en back PHP et MySQL.</p>
                   <p class="code-source">
                     <div class="code-content">
                       <i class="bi bi-code-slash"><span class="text-sm-center">Code Source</span></i>
@@ -239,12 +239,11 @@ serais un élément moteur au sein de votre structure !
           <div class="projet-block">
             <div class="column">
               <div class="card">
-                <img src="images/images_projet/dumbbells-2465478_1920.jpg" alt="Mike" style="width:100%">
-                <div class="container text-projet">
-                  <h2>Mike Ross</h2>
-                  <p class="title">Art Director</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>example@example.com</p>
+                <img src="images/images_projet/projetPortfolio.png" alt="Mike" style="width:100%">
+                <div class="container text-projet mt-3">
+                  <h2>Mon Portfolio</h2>
+                  <p class="title">Site Web</p>
+                  <p>Site Web developper en html, css, JavaScript, bootstrap.</p>
                   <p class="code-source">
                     <div class="code-content">
                       <i class="bi bi-code-slash"><span class="text-sm-center">Code Source</span></i>
@@ -259,12 +258,11 @@ serais un élément moteur au sein de votre structure !
           <div class="projet-block">
             <div class="column">
               <div class="card">
-                <img src="images/images_projet/fitness-6698891_1920.png" alt="Mike" style="width:100%">
-                <div class="container text-projet">
-                  <h2>Automatisation Calcul</h2>
-                  <p class="title">Art Director</p>
-                  <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                  <p>example@example.com</p>
+                <img src="images/images_projet/projetJavascript.png" alt="Mike" style="width:100%">
+                <div class="container text-projet mt-3">
+                  <h2>Javascript</h2>
+                  <p class="title">Calcul Math</p>
+                  <p>c 'est une application web developper en html, css pur et JavaScript pur.</p>
                   <p class="code-source">
                     <div class="code-content">
                       <i class="bi bi-code-slash"><span class="text-sm-center">Code Source</span></i>
@@ -277,12 +275,10 @@ serais un élément moteur au sein de votre structure !
         </div>
       </div>
     </div>
-    
-
   </section>
     
 
-  <div class="px-3 py-2 bg-light-subtle footer">
+  <div class="px-3 py-2 footer">
       <div class="container">
         <i class=" bi bi-chevron-up " id="scroll-to-top" onclick="scrollTotopFunction()"></i>
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-success ">
@@ -290,7 +286,7 @@ serais un élément moteur au sein de votre structure !
              
               <div class="row">
                 <div class="col-md-12 col-sm-6">
-                  <span class="text-dark">&copy;Tendry Tsitohaina Portfolio 2025</span>
+                  <span class="text-footer">&copy;Tendry Tsitohaina Portfolio 2025</span>
               
                 </div>
                 <div class="col-md-12 col-sm-6">

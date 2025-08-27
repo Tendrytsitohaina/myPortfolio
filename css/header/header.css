@@ -1,6 +1,7 @@
 .nav-container{
     display: flex;
     justify-content: space-between;
+    background: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px;  
     align-items: center;
     width:100%;
@@ -99,7 +100,7 @@ html, body{
     color: var(--success);
 }
 .nav-links a.active {
-    color: var(--success);
+    color: #28a745;
     font-weight: bold;
     transform-origin: right;
     transition: all .1s ease;
@@ -153,7 +154,7 @@ html, body{
     color: #777;    
     font-weight: 500;
     transition: .3s ease;
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
     width: 100%;
 }
@@ -161,14 +162,9 @@ html, body{
 .nav-links > .nav-link-item > .dropdown-menus > .dropdown-menu-item > i:hover{
     background-color: rgb(228, 228, 228);
     color: #28a745;
+    cursor: pointer;
 }
 
-@media screen and (min-width: 992px) {
-    .name{
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-}
 
 
 @media screen and (max-width: 992px) {
