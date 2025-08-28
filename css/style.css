@@ -65,6 +65,9 @@ body{
     color: #b7b7b7;
 }
 
+.code-content a{
+    text-decoration: none;
+}
 .indigo{
     color: var(--green);
 }
